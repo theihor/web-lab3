@@ -1,0 +1,12 @@
+{% extends "app/main.html" %}
+{% block content %}
+<h2>Choose your game</h2>
+<ul class="list-group">
+  {% for id, game in games %}
+  <li class="list-group-item">
+    <a href="game?id={{id}}">{{game}}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}
+
